@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(62, 186, 236);
+}
+
+.title{
+    font-size: 2em; /*medida relativa al tamaño de fuente base de la pagina*/
+    color:rgb(216, 232, 248);
+}
+
+
+
+#principal{
+    font-size: 4em;
+}
+
+.logo{
+    width: 200px; /*ancho*/
+
+}
+
+.logos{
+    width: 400px;/*ancho*/
+}
+
+.cards{
+
+    /*borde del cuadro en este caso tarjeta*/
+    border: 2px solid rgb(150, 30, 166);
+
+    /*tener el ancho que tengas que tener para poder
+    tener tu contenido == que tu contenido te diga el 
+    ancho*/
+    width: fit-content;
+
+    /*Se despegara de su contenido segun en el orden de las
+    manecillas del reloj*/
+    padding: 0px 1em 1em 1em;
+
+    /*Que porcentaje queramos redondear el borde*/
+    border-radius: 10%;
+
+    /*El tiempo que quiero que lleve esta transformación*/
+    transition: 1s;
+}
+
+/*pseudoselectores aqui la clase cards al poner el 
+maus por arriba*/
+.cards:hover{
+    background-color: rgb(150, 30, 166);
+}
+
+#titulos{
+    /*borde del cuadro que rodea la parte principal*/
+    border: 2px solid rgb(150, 30, 166);
+   
+    /*Que tenga un ancho no toda la pantalla
+    vw == viewport width == 65% del ancho de la pantalla 
+    donde yo este no importa que pantalla*/
+    width: 60vw; 
+
+    /*Que tanto se va a distanciar los bordes de este elemento de
+     los bordes que lo rodeane */
+    margin: auto;
+
+    /*Se despegara de su contenido*/
+    padding: 3em;
+}
